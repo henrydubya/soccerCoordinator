@@ -1,105 +1,105 @@
 // Each player is represnted by a dictionary with string keys and values
 let playerOne: [String: Any] = [
     "name" : "Joe Smith",
-    "height" : "42",
+    "height" : "42.0",
     "experience" : "true",
-    "gueardian" : "Jim and Jan Smith"
+    "guardian" : "Jim and Jan Smith"
 ]
 
 let playerTwo: [String: Any] = [
     "name" : "Jill Tanner",
-    "height" : "36",
+    "height" : "36.0",
     "experience" : "true",
-    "gueardian" : "Clara Tanner"
+    "guardian" : "Clara Tanner"
 ]
 
 let playerThree: [String: Any] = [
     "name" : "Bill Bon",
-    "height" : "43",
+    "height" : "43.0",
     "experience" : "true",
-    "gueardian" : "Sara and Jenny Bon"
+    "guardian" : "Sara and Jenny Bon"
 ]
 
 var playerFour: [String: Any] = [
     "name" : "Eva Gordon",
-    "height" : "45",
+    "height" : "45.0",
     "experience" : "false",
-    "gueardian" : "Wendy and Mike Gordon"
+    "guardian" : "Wendy and Mike Gordon"
 ]
 
 let playerFive: [String: Any] = [
     "name" : "Matt Gill",
-    "height" : "40",
+    "height" : "40.0",
     "experience" : "false",
-    "gueardian" : "Charles and Sylvia Gill"
+    "guardian" : "Charles and Sylvia Gill"
 ]
 
 var playerSix: [String: Any] = [
     "name" : "Kimmy Stein",
-    "height" : "41",
+    "height" : "41.0",
     "experience" : "false",
     "guardian" : "Bill and Hillary Stein"
 ]
 
 let playerSeven: [String: Any] = [
     "name" : "Sammy Adams",
-    "height" : "45",
+    "height" : "45.0",
     "experience" : "false",
     "guardian" : "Jeff Adams"
 ]
 
 let playerEight: [String: Any] = [
     "name" : "Karl Saygan",
-    "height" : "42",
+    "height" : "42.0",
     "experience" : "true",
     "guardian" : "Heather Bledsoe"
 ]
 
 let playerNine: [String: Any] = [
     "name" : "Suzanne Greenberg",
-    "height" : "44",
+    "height" : "44.0",
     "experience" : "true",
     "guardian" : "Henrietta Dumas"
 ]
 
 let playerTen: [String: Any] = [
     "name" : "Sal Dali",
-    "height" : "41",
+    "height" : "41.0",
     "experience" : "false",
     "guardian" : "Gala Dali"
 ]
 
 let playerEleven: [String: Any] = [
     "name" : "Joe Kavalier",
-    "height" : "39",
+    "height" : "39.0",
     "experience" : "false",
     "guardian" : "Sam and Elaine Kavalier"
 ]
 
 let playerTwelve: [String: Any] = [
     "name" : "Ben Finkelstein",
-    "height" : "44",
+    "height" : "44.0",
     "experience" : "false",
     "guardian" : "Aaron and Jill Finkelstein"
 ]
 
 let playerThirteen: [String: Any] = [
     "name" : "Diego Soto",
-    "height" : "41",
+    "height" : "41.0",
     "experience" : "true",
     "guardian" : "Robin and Sarika Soto"
 ]
 
 let playerFourteen: [String: Any] = [
     "name" : "Chloe Alaska",
-    "height" : "47",
+    "height" : "47.0",
     "experience" : "false",
     "guardian" : "David and Jamie Alaska"
 ]
 
 let playerFifteen: [String: Any] = [
     "name" : "Arnold Willis",
-    "height" : "43",
+    "height" : "43.0",
     "experience" : "false",
     "guardian" : "Claire Willis"
 ]
@@ -113,14 +113,14 @@ let playerSixteen: [String: Any] = [
 
 let playerSeventeen: [String: Any] = [
     "name" : "Les Clay",
-    "height" : "42",
+    "height" : "42.0",
     "experience" : "true",
     "guardian" : "Wynonna Brown"
 ]
 
 let playerEighteen: [String: Any] = [
     "name" : "Herschel Krustofski",
-    "height" : "45",
+    "height" : "45.0",
     "experience" : "true",
     "guardian" : "Hyman and Rachel Krustofski"
 ]
@@ -164,6 +164,13 @@ var hasNoExperience: [String:Any] = [:]
  
  Also, if you would like to attain an “exceeds expectations” rating for this project, add logic to ensure that each team's average height is within 1.5 inches of the others.
  */
+
+for player in players {
+    if players(experience): [Bool] == "true" {
+        hasExperience.append(player)
+    }
+    
+}
 
 // possibly if players()
 
