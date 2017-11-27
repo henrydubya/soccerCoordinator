@@ -147,13 +147,6 @@ let players = [
     playerEighteen
 ]
 
-
-// Create variables that will hold all the players for the three teams using the team "name" prefixed with 'team'
-
-var teamDragons: [String:Any] = [:]
-var teamRaptors: [String:Any] = [:]
-var teamSharks: [String:Any] = [:]
-
 // Creating variables on which I'll use to switch and create teams
 
 var hasExperience: [String:Any] = [:]
@@ -166,18 +159,81 @@ var hasNoExperience: [String:Any] = [:]
  */
 
 for player in players {
-    if players(experience): [Bool] == "true" {
+    if player["experience"] as! Bool == true {
         hasExperience.append(player)
     }
-    
+    else {
+        hasNoExperience.append(player)
+    }
 }
 
-// possibly if players()
+// Create variables that will hold all the players for the three teams using the team "name" prefixed with 'team'
 
-// Logic that prints a letter to the parent specifying player’s "name", "guardian" "name"s, team "name", and date/time of their first team practice
+var teamDragons: [[String:Any]] = []
+var teamRaptors: [[String:Any]] = []
+var teamSharks: [[String:Any]] = []
+
+// Sorting experienced players into fair teams
+
+for i in 0..<hasExperience.count {
+    switch true {
+    case i % 3 == 0:
+        teamDragons.append(hasExperience[i])
+    case i % 3 == 1:
+        teamRaptors.append(hasExperience[i])
+    case i % 3 == 2:
+        teamSharks.append(hasExperience[i])
+    default:
+        break
+    }
+}
+
+// Sorting players without experience into fair teams
+
+for i in 0..<hasNoExperience.count {
+    switch true {
+    case i % 3 == 0:
+        teamDragons.append(hasExperience[i])
+    case i % 3 == 1:
+        teamRaptors.append(hasExperience[i])
+    case i % 3 == 2:
+        teamSharks.append(hasExperience[i])
+    default:
+        break
+    }
+}
+// Establishing all team's practice time and dates
+
+let firstPractice: [String: String] = ["Team Dragons": "March 17, 1pm", "Team Sharks": "March 17, 3pm", "Team Raptors": "March 18, 1pm"]
+
+//Variable for letters to be collected
+
+var letters: [String] = []
+
+// Letter logic based on player information
+
+func welcomeLetter(for player: [String:Any], onTeam team: String) -> String {
+    let letter = // Letter text goes here
+    return letter
+}
+
+// Adding each player's letter to the letter collection
+
+func addLetter(for team: [[String:Any]], onTeam: String) {
+    for player in team {
+        letters.append(for: player, onTeam)
+    }
+}
+
+// Calling functions to append letters
+addLetter(for: teamDragons, onTeam: "Team Dragons")
+addLetter(for: teamSharks, onTeam: "Team Sharks")
+addLetter(for: teamRaptors, onTeam: "Team Raptors")
+
+// Printing the formatted letter
+for letter in letters {
+    print(letter)
+}
 
 
-// Store the letter in a collection variable "name"d letters
-
-// possilby var letters = [something]
 
