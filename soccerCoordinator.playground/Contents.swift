@@ -204,58 +204,45 @@ for i in 0..<hasNoExperience.count {
     }
 }
 
-
-// Maybe I should make dictionary for the practice dates and then call that from a function depending on the tame that the player is from?
+// Collect all the first practice times
 
 let firstPractice: [String: String] = ["Team Dragons": "March 17, 1pm", "Team Raptors": "March 18, 1pm", "Team Sharks": "March 17, 3pm"]
 
-// Make an array containing all letters
+// Make a collection for all guardian letters
 var letters = [String]()
 
-// Iterate through Dragons list, append message to letters
-
-for dragon in teamDragons {
-    print(Hi there, \()! Are you ready to breath fire on the field? Our first meeting will be March 17 at 1pm.)
+// Generate the letter template
+func guardianLetter() {
+    // check for player team membership
+    // get guardian names from player dictionary
+    // string interpolate completed letter for each player
+    // append completed letter to letters collection
 }
-letters.append(firstDragonPractice: String)
-// Iterate through Sharks list
-
-// Iterate through Raptors list
-
-
-/*
-// Establishing all team's practice time and dates
-
-let firstPractice: [String: String] = ["Team Dragons": "March 17, 1pm", "Team Sharks": "March 17, 3pm", "Team Raptors": "March 18, 1pm"]
-
-//Variable for letters to be collected
-
-var letters: [String] = []
-
-// Letter logic based on player information
-
-func welcomeLetter(for player: [String:Any], onTeam team: String) -> String {
-    let letter = ""
-    return letter
-}
-
-// Adding each player's letter to the letter collection
-
-func addLetter(for team: [[String:Any]], onTeam: String) {
-    for player in team {
-        //letters.append(for: player, onTeam)
-    }
-}
-
-// Calling functions to append letters
-addLetter(for: teamDragons, onTeam: "Team Dragons")
-addLetter(for: teamSharks, onTeam: "Team Sharks")
-addLetter(for: teamRaptors, onTeam: "Team Raptors")
-
-// Printing the formatted letter
-for letter in letters {
-    print(letter)
-}
-*/
-
+//
+//// Letter logic based on player information
+//
+//func welcomeLetter(for player: [String:Any], onTeam team: String) -> String {
+//    let letter = ""
+//    return letter
+//}
+//
+//// Adding each player's letter to the letter collection
+//
+//func addLetter(for team: [[String:Any]], onTeam: String) {
+//    for player in team {
+//        //letters.append(for: player, onTeam)
+//    }
+//}
+//
+//// Calling functions to append letters
+//addLetter(for: teamDragons, onTeam: "Team Dragons")
+//addLetter(for: teamSharks, onTeam: "Team Sharks")
+//addLetter(for: teamRaptors, onTeam: "Team Raptors")
+//
+//// Printing the formatted letter
+//for letter in letters {
+//    print(letter)
+//}
+//*/
+//
 
