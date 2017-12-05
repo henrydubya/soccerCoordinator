@@ -204,11 +204,20 @@ for i in 0..<hasNoExperience.count {
     }
 }
 
+
+// Maybe I should make dictionary for the practice dates and then call that from a function depending on the tame that the player is from?
+
+let firstPractice: [String: String] = ["Team Dragons": "March 17, 1pm", "Team Raptors": "March 18, 1pm", "Team Sharks": "March 17, 3pm"]
+
 // Make an array containing all letters
 var letters = [String]()
 
 // Iterate through Dragons list, append message to letters
 
+for dragon in teamDragons {
+    print(Hi there, \()! Are you ready to breath fire on the field? Our first meeting will be March 17 at 1pm.)
+}
+letters.append(firstDragonPractice: String)
 // Iterate through Sharks list
 
 // Iterate through Raptors list
