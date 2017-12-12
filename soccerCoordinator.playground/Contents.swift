@@ -212,7 +212,12 @@ let firstPractice: [String: String] = ["Team Dragons": "March 17, 1pm", "Team Ra
 var letters = [String]()
 
 // Generate the letter template
+
 func guardianLetter() {
+    for teamMember in teamDragons {
+        print(<#T##items: Any...##Any#>)
+    }
+    
     // check for player team membership
     // get guardian names from player dictionary
     // string interpolate completed letter for each player
