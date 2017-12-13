@@ -206,48 +206,17 @@ for i in 0..<hasNoExperience.count {
 
 // Collect all the first practice times
 
-let firstPractice: [String: String] = ["Team Dragons": "March 17, 1pm", "Team Raptors": "March 18, 1pm", "Team Sharks": "March 17, 3pm"]
+let firstPractice: [String: String] = ["Team Dragons": "", "Team Raptors": "March 18, 1pm", "Team Sharks": "March 17, 3pm"]
 
 // Make a collection for all guardian letters
 var letters = [String]()
 
-// Generate the letter template
+// Print Team Dragon letters
 
-func guardianLetter() {
-    for teamMember in teamDragons {
-        print(<#T##items: Any...##Any#>)
-    }
-    
-    // check for player team membership
-    // get guardian names from player dictionary
-    // string interpolate completed letter for each player
-    // append completed letter to letters collection
+for (key, value) in teamDragons {
+    print("Howdy, \(guardian)! We welcome \(name) to Team Dragons and invite you to join us for the first practice on March 17, 1pm. The coaches and staff can't wait fo you to join us! ")
 }
-//
-//// Letter logic based on player information
-//
-//func welcomeLetter(for player: [String:Any], onTeam team: String) -> String {
-//    let letter = ""
-//    return letter
-//}
-//
-//// Adding each player's letter to the letter collection
-//
-//func addLetter(for team: [[String:Any]], onTeam: String) {
-//    for player in team {
-//        //letters.append(for: player, onTeam)
-//    }
-//}
-//
-//// Calling functions to append letters
-//addLetter(for: teamDragons, onTeam: "Team Dragons")
-//addLetter(for: teamSharks, onTeam: "Team Sharks")
-//addLetter(for: teamRaptors, onTeam: "Team Raptors")
-//
-//// Printing the formatted letter
-//for letter in letters {
-//    print(letter)
-//}
-//*/
+
+// need to fix ambiguous expression type in letter block
 //
 
