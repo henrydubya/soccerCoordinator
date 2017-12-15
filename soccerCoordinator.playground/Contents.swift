@@ -204,19 +204,27 @@ for i in 0..<hasNoExperience.count {
     }
 }
 
-// Collect all the first practice times
+/* Collect all the first practice times
 
 let firstPractice: [String: String] = ["Team Dragons": "", "Team Raptors": "March 18, 1pm", "Team Sharks": "March 17, 3pm"]
+
+ */
 
 // Make a collection for all guardian letters
 var letters = [String]()
 
-// Print Team Dragon letters
+// Print Team letters (I need to figure out what arguments I need and how to format them properly to pull from the dictionaries created above)
 
-for (key, value) in teamDragons {
-    print("Howdy, \(guardian)! We welcome \(name) to Team Dragons and invite you to join us for the first practice on March 17, 1pm. The coaches and staff can't wait fo you to join us! ")
+func teamLetters() -> String {
+    
 }
 
-// need to fix ambiguous expression type in letter block
-//
+
+/*
+
+ The print statement might look something like this
+ 
+ print("Howdy, \(guardian)! We welcome \(name) to Team Dragons and invite you to join us for the first practice on March 17, 1pm. The coaches and staff can't wait fo you to join us!")
+ 
+ */
 
