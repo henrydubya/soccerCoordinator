@@ -152,11 +152,7 @@ var players = [
 var hasExperience = [[String:Any]]()
 var hasNoExperience = [[String:Any]]()
 
-/* Use a switch statement to determine the teams.
- Create logic to iterate through all 18 players and assign them to teams such that the number of experienced players on each team are the same. Store each team’s players in its own new collection variable for use in Part 3. (Please note: your logic should work correctly regardless of the initial ordering of the players and should work, if we theoretically had more or less than 18 players, so NO MAGIC NUMBERS!)
- 
- Also, if you would like to attain an “exceeds expectations” rating for this project, add logic to ensure that each team's average height is within 1.5 inches of the others.
- */
+// Determine team based on player experience
 
 for player in players {
     let isExperienced = player["experience"] as! Bool
@@ -204,27 +200,36 @@ for i in 0..<hasNoExperience.count {
     }
 }
 
-/* Collect all the first practice times
+// Collect all the first practice times
 
-let firstPractice: [String: String] = ["Team Dragons": "", "Team Raptors": "March 18, 1pm", "Team Sharks": "March 17, 3pm"]
-
- */
+ let practiceTime: [String: String] = ["Team Dragons": "March 17th, at 1 p.m.", "Team Sharks": "March 17th, at 3 p.m.", "Team Raptors": "March 18th, at 1 p.m."]
 
 // Make a collection for all guardian letters
+
 var letters = [String]()
 
-// Print Team letters (I need to figure out what arguments I need and how to format them properly to pull from the dictionaries created above)
+// Function to create the letters
 
-func teamLetters() -> String {
-    
+func createLetter(for player: [String: Any], onTeam team: String) -> String {
+    let letter = "Howdy \(player["guardian"]!), it's that time of year again! Our annual Youth Soccer League is about to begin, and \(player["name"]!) has been placed on \(team). Get riled up for the first team practice on \(practiceTime[team]!) No equipment will be needed for this practice, just smiling faces. :) We look forward to seeing you there!"
+    return letter
 }
 
+// Logic that adds the individual player letters to the letters collection
+func addPlayerLetters(for team: [[String: Any]], onTeam: String) {
+    for player in team {
+        letters.append(createLetter(for: player, onTeam: onTeam))
+    }
+}
 
-/*
+// Calling a function to append the letters to each team's letter's collection
 
- The print statement might look something like this
+addPlayerLetters(for: teamDragons, onTeam: "Team Dragons")
+addPlayerLetters(for: teamRaptors, onTeam: "Team Raptors")
+addPlayerLetters(for: teamSharks, onTeam: "Team Sharks")
+
+// Printing each player letter to the console
+for letter in letters {
+    print(letter)
+}
  
- print("Howdy, \(guardian)! We welcome \(name) to Team Dragons and invite you to join us for the first practice on March 17, 1pm. The coaches and staff can't wait fo you to join us!")
- 
- */
-
