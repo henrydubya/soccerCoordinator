@@ -1,3 +1,13 @@
+/*
+
+Feedback
+ 
+remove magic numbers from logic
+rethink variable naming
+ 
+ */
+
+
 // Each player is represnted by a dictionary with string keys and values
 let playerOne: [String: Any] = [
     "name" : "Joe Smith",
